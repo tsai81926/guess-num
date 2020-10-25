@@ -4,8 +4,13 @@
 #猜錯要告訴使用者比數自大/小
 
 import random
+start = input('請輸入隨機數字的開始值')
+end = input('請輸入隨機數字的結束值')
+start = int(start)
+end = int(end)
+
 count = 0
-r = random.randint(1 ,100)
+r = random.randint(start ,end)
 while True:
 	count = count + 1 #快寫法: "count += 1"
 	num = input('請猜數字: ')
